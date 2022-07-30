@@ -1,0 +1,132 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(to bottom, $primary-color, #853731);
+  height: 40vmin;
+  color: $white-color;
+  border-radius: 9px;
+  margin-bottom: 50px;
+
+  & > h1 {
+    font-size: 4vmin;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  & > p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  &_button_scroll {
+    border: 0;
+    cursor: pointer;
+    background-color: #fff;
+    outline: 0;
+    padding: 1.4rem;
+    border-radius: 9990px;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    color: $text-color;
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 0.9;
+      transform: translateY(5px);
+    }
+  }
+}
+
+.featured__product {
+  &__heading {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    margin: 4rem 0px;
+  }
+}
+
+.pagination {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+
+  & li {
+    padding: 1rem;
+    border: 1px solid $primary-color;
+    font-weight: 500;
+    color: $white-color;
+    background-color: $primary-color;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+
+    &:hover {
+      background: $white-color;
+      color: $primary-color;
+    }
+  }
+}
+
+.pageItemActive.page-item {
+  background-color: $white-color;
+  color: $primary-color;
+  transition: all 0.3s ease;
+  &:hover {
+    background: $primary-color;
+    color: $white-color;
+  }
+
+  &:focus {
+    color: $white-color;
+  }
+}
+
+.filter-categories {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+
+  &-title {
+    color: $primary-color;
+    font-weight: 500;
+  }
+  & > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    & > li {
+      border-radius: 2px;
+      border: solid 1px $primary-color;
+      padding: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s linear;
+
+      &:hover {
+        background-color: #fff;
+        color: $primary-color;
+      }
+
+      &.active {
+        color: $primary-color;
+      }
+    }
+  }
+}

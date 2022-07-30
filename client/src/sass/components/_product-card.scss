@@ -1,0 +1,37 @@
+.product__card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: $text-color;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: rgba(149, 157, 165, 0.7) 0px 8px 24px;
+  }
+  & > img {
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  &__stars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-bottom: 0.5rem;
+  }
+
+  &__price {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+  }
+}

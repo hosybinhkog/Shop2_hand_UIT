@@ -1,0 +1,123 @@
+.confirm {
+  &__title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+  }
+
+  &__order__summary__title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  &__info__box {
+    display: flex;
+    font-size: 1.4rem;
+    gap: 1rem;
+    font-weight: 300;
+
+    & > p {
+      color: $primary-color;
+      font-weight: 400;
+    }
+  }
+}
+
+.confirm__cartItems {
+  &__title {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 2rem;
+  }
+
+  &__container {
+    font-size: 1.4rem;
+    font-weight: 300;
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 2rem;
+    }
+
+    &__img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+  }
+}
+
+.category {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+.confirm__order__summary {
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__container__box {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 1rem;
+    font-weight: 300;
+
+    & > p {
+      color: $primary-color;
+      font-weight: 400;
+    }
+  }
+}
+
+.order__total {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.btn__confirm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.btn-confirm {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 25px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  background-color: $primary-color;
+  transition: all 0.3s linear;
+  color: $white-color;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

@@ -1,0 +1,51 @@
+.cart {
+  padding-top: 2rem;
+  &__title {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  &__caption {
+    text-align: center;
+    color: #636d77;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 2.4rem;
+    margin: 2rem 0;
+    font-weight: 300;
+
+    & span {
+      color: $primary-color;
+      font-weight: 600;
+    }
+  }
+
+  &__total {
+    display: flex;
+    padding: 2rem;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    align-items: center;
+    gap: 1rem;
+    &__title {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    & button {
+      padding: 15px 25px;
+      background-color: $primary-color;
+      color: $white-color;
+      font-size: 1.6rem;
+      border-radius: 3px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      &:hover {
+        opacity: 0.9;
+        transform: translateY(2px);
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.sidebar {
+  min-width: 300px;
+  position: fixed;
+  left: 0;
+  top: $header-height + 10px;
+  z-index: 99;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    & > img {
+      object-fit: cover;
+      height: 45px;
+    }
+  }
+
+  &__item {
+    padding: 0 20px;
+
+    &-inner {
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 1.6rem;
+      transition: color 0.3s ease 0s;
+
+      & > i {
+        margin-right: 10px;
+        font-size: 2rem;
+      }
+
+      & > span {
+        text-transform: capitalize;
+      }
+
+      &:hover {
+        color: $primary-color;
+      }
+
+      &.active {
+        border-radius: 15px;
+        background-image: linear-gradient(0, #fe6433, #f53e2d);
+        color: $white-color;
+      }
+    }
+  }
+}
